@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./screens/Home/Home";
+import {
+    BrowserRouter as Router,
+    Route,
+    Routes
+} from "react-router-dom";
+import Earning from './screens/Earning/Earning'
+import SwapToken from './screens/Swaptoken/SwapToken';
+import Dashboard from './component/Dashboard'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return ( <
+        div >
+        <
+        Home / > {
+            /* <Router>
+                    <Routes>
+                    <Dashboard/>
+
+                      <Route path="/" element={<Earning />} exact />
+                      <Route path="/swapToken" element={<SwapToken />} />
+
+
+                    </Routes>
+                  </Router>   */
+        } <
+        /div>
+    );
 }
 
 export default App;
